@@ -26,14 +26,47 @@ body .section {
   min-height: 100vh;
   display: block;
   position: fixed;
+  padding: 0 30px;
   left: 270px;
   top: 0;
   right: 0;
   z-index: 0;
   opacity: 1;
+  display: flex;
+}
+body .padd-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+body .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+body .btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: white;
+  border-radius: 40px;
+  display: inline-block;
+  border: none;
+  white-space: nowrap;
+  background: #ec1839;
+  transition: all 0.3s ease-in-out;
+}
+body .btn:hover {
+  transform: scale(1.05);
 }
 
-/* Left Side */
+/* NavBar */
 .aside {
   width: 270px;
   background: #fdf9ff;
@@ -144,4 +177,51 @@ body .section {
 }
 .aside .nav li a.active {
   color: #ec1839;
+}
+
+/* Home Section */
+.home {
+  min-height: 100vh;
+  display: flex;
+  color: #302e4d;
+}
+.home .home-info {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.home .home-info h3.hello {
+  font-size: 28px;
+  margin: 15px 0;
+}
+.home .home-info h3.hello span {
+  font-family: "Clicker Script", cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ec1839;
+}
+.home .home-info h3.my-profession {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.home .home-info .typing {
+  color: #ec1839;
+}
+.home .home-info p {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: #504e70;
+}
+.home .home-image {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+}
+.home .home-image img {
+  height: 400px;
+}
+.home .home-image::after {
+  content: "";
+  position: absolute;
+  height: 80px;
 }/*# sourceMappingURL=style.css.map */

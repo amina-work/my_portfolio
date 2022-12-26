@@ -34,15 +34,49 @@ body{
         min-height: 100vh;
         display: block;
         position: fixed;
+        padding: 0 30px;
         left: 270px;
         top: 0;
         right: 0;
         z-index: 0;
         opacity: 1;
-    }    
+        display: flex;
+    }
+    .padd-15{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container{
+        max-width: 1100px;
+        width: 100%;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        position: relative;
+    }
+    .btn{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 12px 35px;
+        color: white;
+        border-radius: 40px;
+        display: inline-block;
+        border: none;
+        white-space: nowrap;
+        background: $skinColor;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
 }
 
-/* Left Side */
+/* NavBar */
 .aside{
     width: 270px;
     background: $bgBlack1;
@@ -155,6 +189,56 @@ body{
             a.active{
                 color: $skinColor;
             }
+        }
+    }
+}
+
+/* Home Section */
+.home{
+    min-height: 100vh;
+    display: flex;
+    color: $textBlack9;
+
+    .home-info{
+        flex: 0 0 60%;
+        max-width: 60%;
+
+        h3.hello{
+            font-size: 28px;
+            margin: 15px 0;
+            span{
+                font-family: 'Clicker Script', cursive;
+                font-size: 30px;
+                font-weight: 700;
+                color: $skinColor;
+            }
+        }
+        h3.my-profession{
+            font-size: 30px;
+            margin: 15px 0;
+        }
+        .typing{
+            color: $skinColor;
+        }
+        p{
+            margin-bottom: 70px;
+            font-size: 20px;
+            color: $textBlack7;
+        }
+    }
+    .home-image{
+        flex: 0 0 40%;
+        max-width: 40%;
+        text-align: center;
+        position: relative;
+        img{
+            height: 400px;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            height: 80px;
+            
         }
     }
 }
