@@ -9,7 +9,7 @@ $textBlack7: #504e70;
 
 $skinColor: #ec1839;
 
-/* General */
+/*========================================= General =========================================*/
 *{
     margin: 0;
     padding: 0;
@@ -33,14 +33,14 @@ body{
         background: $bgBlack9;
         min-height: 100vh;
         display: block;
-        position: fixed;
         padding: 0 30px;
-        left: 270px;
-        top: 0;
-        right: 0;
-        z-index: 0;
         opacity: 1;
-        display: flex;
+        //display: flex;
+
+        .container{
+            padding-top: 60px;
+            padding-bottom: 70px;
+        }
     }
     .padd-15{
         padding-left: 15px;
@@ -50,6 +50,11 @@ body{
         max-width: 1100px;
         width: 100%;
         margin: auto;
+
+        .container{
+            padding-top: 60px;
+            padding-bottom: 70px;
+        }
     }
     .row{
         display: flex;
@@ -74,9 +79,47 @@ body{
             transform: scale(1.05);
         }
     }
+    .main-content{
+        padding-left: 270px;
+    }
+    .hidden{
+        display: none !important;
+    }
+    .section-title{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 60px;
+
+        h2{
+            font-size: 40px;
+            color: $textBlack9;
+            font-weight: 700;
+            position: relative;
+
+            &::before{
+                content: '';
+                height: 4px;
+                width: 50px;
+                background-color: $skinColor;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            &::after{
+                content: '';
+                height: 4px;
+                width: 25px;
+                background-color: $skinColor;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                margin-top: 8px;
+            }
+        }
+    }
 }
 
-/* NavBar */
+/*========================================= NavBar =========================================*/
 .aside{
     width: 270px;
     background: $bgBlack1;
@@ -193,7 +236,7 @@ body{
     }
 }
 
-/* Home Section */
+/* ========================================= Home Section =========================================*/
 .home{
     min-height: 100vh;
     display: flex;
@@ -233,12 +276,125 @@ body{
         position: relative;
         img{
             height: 400px;
+            margin: auto;
+            border-radius: 5px;
         }
         &::after{
             content: '';
             position: absolute;
             height: 80px;
+            width: 80px;
+            border-bottom: 10px solid $skinColor;
+            border-right: 10px solid $skinColor;
+            right: 20px;
+            bottom: -40px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 80px;
+            border-top: 10px solid $skinColor;
+            border-left: 10px solid $skinColor;
+            left: -20px;
+            top: -40px;
+        }
+    }
+}
+
+/*========================================= About Section =========================================*/
+.about{
+    .about-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .about-text{
+            flex: 0 0 100%;
+            max-width: 100%;
             
+            h3{
+                font-size: 24px;
+                margin-bottom: 15px;
+                font-weight: 700;
+                color: $textBlack9;
+
+                span{
+                    color: $skinColor;
+                }
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 25px;
+                color: $textBlack7;
+            }
+        }
+
+        .personal-info{
+            flex: 0 0 60%;
+            max-width: 60%;
+            margin-top: 40px;
+
+            .info-item{
+                flex:  0 0 50%;
+                max-width: 50%;
+
+                p{
+                    font-weight: 600;
+                    padding: 10px 0;
+                    font-size: 14px;
+                    color: $textBlack9;
+                    border-bottom: 1px solid $bgBlack5;
+
+                    span{
+                        font-weight: 400;
+                        color: $textBlack7;
+                        margin-left: 4px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .btns{
+                margin-top: 30px;
+                .btn{
+                    margin-right: 15px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .skills{
+            flex: 0 0 40%;
+            max-width: 40%;
+            margin-top: 40px;
+            .skill-item{
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-bottom: 30px;
+
+                h5{
+                    line-height: 40px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: $textBlack9;
+                    text-transform: capitalize;
+                }
+                .progress{
+                    background-color: $bgBlack5;
+                    height: 7px;
+                    border-radius: 4px;
+                    width: 100%;
+
+                    .progress-in{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 5%;
+                        border-radius: 4px;
+                        background-color: $skinColor;
+                    }
+                }
+            }
         }
     }
 }
