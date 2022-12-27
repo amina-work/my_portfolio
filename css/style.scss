@@ -79,6 +79,9 @@ body{
             transform: scale(1.05);
         }
     }
+    .shadow-dark{
+        box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    }
     .main-content{
         padding-left: 270px;
     }
@@ -384,14 +387,99 @@ body{
                     height: 7px;
                     border-radius: 4px;
                     width: 100%;
+                    position: relative;
 
                     .progress-in{
                         position: absolute;
                         left: 0;
                         top: 0;
-                        height: 5%;
+                        height: 100%;
                         border-radius: 4px;
                         background-color: $skinColor;
+                    }
+                    .skill-percent{
+                        position: absolute;
+                        right: 0;
+                        color: $textBlack9;
+                        top: -40px;
+                        font-weight: 400;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+        
+        .education,
+        .experience{
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-top: 30px;
+        }
+
+        h3.title{
+            font-size: 22px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: $textBlack9;
+        }
+
+        .timeline-box{
+            flex: 0 0 100%;
+            max-width: 100%;
+            .timeline{
+                background-color: $bgBlack1;
+                padding: 30px 15px;
+                border: 1px solid $bgBlack5;
+                border-radius: 10px;
+                width: 100%;
+                position: relative;
+
+                .timeline-item{
+                    position: relative;
+                    padding-left: 37px;
+                    padding-bottom: 50px;
+                    &:last-child{
+                        padding-bottom: 0;
+                    }
+                    &::before{
+                        content: '';
+                        width: 1px;
+                        position: absolute;
+                        height: 100%;
+                        left: 7px;
+                        top: 0;
+                        background-color: $skinColor;
+                    }
+                    .circle-dot{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 50%;
+                        background-color: $skinColor;
+                    }
+                    .timeline-date{
+                        font-weight: 400;
+                        font-size: 14px;
+                        margin-bottom: 12px;
+                        color: $textBlack7;
+                        .fa{
+                            margin-right: 5px;
+                        }
+                    }
+                    .timeline-title{
+                        font-weight: 700;
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        text-transform: capitalize;
+                        color: $textBlack9;
+                    }
+                    .timeline-text{
+                        line-height: 25px; 
+                        font-size: 16px;
+                        text-align: justify;
+                        color: $textBlack7;
                     }
                 }
             }
