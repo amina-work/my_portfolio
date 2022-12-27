@@ -538,3 +538,43 @@ body{
         }
     }
 }
+
+/* ========================================= Portfolio Section =========================================*/
+.portfolio{
+    .container{
+        padding-bottom: 40px;
+    }
+    .portfolio-heading{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        h2{
+            color: $textBlack9;
+            font-weight: 400;
+            font-size: 22px;
+        }
+    }
+    .portfolio-item{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        margin-bottom: 30px;
+        transition: all 400ms ease-in-out;
+
+        &:hover{
+            box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+        }
+        .portfolio-item-inner{
+            border: 6px solid $bgBlack1;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            .portfolio-img{
+                img{
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
