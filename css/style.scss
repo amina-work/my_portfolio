@@ -79,6 +79,10 @@ body{
     }
     .main-content{
         padding-left: 270px;
+        .center{
+            display: flex;
+            margin: auto;
+        }
     }
     .hidden{
         display: none !important;
