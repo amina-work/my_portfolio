@@ -582,3 +582,97 @@ body{
         }
     }
 }
+
+/*========================================= Contact =========================================*/
+.contact{
+    .contact-title{
+        color: $skinColor;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .contact-sub-title{
+        color: $textBlack9;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 60px;
+    }
+    .contact-info-item{
+        flex: 0 0 25%;
+        max-width: 25%;
+        text-align: center;
+
+        .icon{
+            display: inline-block;
+            i{
+                font-size: 25px;
+                color: $skinColor;
+            }
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 700;
+            color: $textBlack9;
+            text-transform: capitalize;
+            margin: 15px 0 5px;
+        }
+        p, a{
+            font-size: 16px;
+            line-height: 25px;
+            color: $textBlack7;
+            font-weight: 400;
+        }
+        a{
+            position: relative;
+            &::before{
+                content: '';
+                height: 1px;
+                width: 90%;
+                background-color: $textBlack7;
+                position: absolute;
+                top: 100%;
+                left: 5%;
+            }
+        }
+    }
+
+    .contact-form{
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .col-6{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col-12{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .form-item{
+            margin-bottom: 30px;
+            .form-control{
+                width: 100%;
+                height: 50px;
+                border-radius: 15px;
+                background: $bgBlack1;
+                border: 1px solid $bgBlack5;
+                padding: 10px 25px;
+                font-size: 16px;
+                color: $textBlack7;
+                transition: all 0.3s ease-in-out;
+
+                &:focus{
+                    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+                }
+            }
+            textarea.form-control{
+                height: 140px;
+            }
+        }
+        .btn{
+            height: 50px;
+            padding: 0 50px;
+        }
+    }
+}
