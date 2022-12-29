@@ -29,6 +29,10 @@ body{
     ul{
         list-style: none;
     }
+    .section.active{
+        z-index: 2;
+        opacity: 1;
+    }
     .section{
         background: $bgBlack9;
         min-height: 100vh;
@@ -36,6 +40,14 @@ body{
         padding: 0 30px;
         opacity: 1;
         //display: flex;
+        position: fixed;
+        left: 270px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
 
         .container{
             padding-top: 60px;
@@ -78,7 +90,7 @@ body{
         box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     }
     .main-content{
-        padding-left: 270px;
+        //padding-left: 270px;
         .center{
             display: flex;
             margin: auto;
@@ -683,8 +695,8 @@ body{
     .aside{
         left: -270px;
     }
-    .main-content{
-        padding-left: 0 !important;
+    .section{
+        left: 0 !important;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;

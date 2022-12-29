@@ -21,12 +21,24 @@ body {
 body ul {
   list-style: none;
 }
+body .section.active {
+  z-index: 2;
+  opacity: 1;
+}
 body .section {
   background: #f2f2fc;
   min-height: 100vh;
   display: block;
   padding: 0 30px;
   opacity: 1;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 body .section .container {
   padding-top: 60px;
@@ -65,9 +77,6 @@ body .btn:hover {
 }
 body .shadow-dark {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
-body .main-content {
-  padding-left: 270px;
 }
 body .main-content .center {
   display: flex;
@@ -632,8 +641,8 @@ body .section-title h2::after {
   .aside {
     left: -270px;
   }
-  .main-content {
-    padding-left: 0 !important;
+  .section {
+    left: 0 !important;
   }
   .about .about-content .personal-info .info-item p span {
     display: block;
