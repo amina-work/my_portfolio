@@ -24,6 +24,27 @@ body ul {
 body .section.active {
   z-index: 2;
   opacity: 1;
+  -webkit-animation: slideSection 300ms ease;
+          animation: slideSection 300ms ease;
+}
+@-webkit-keyframes slideSection {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slideSection {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+body .section.back-section {
+  z-index: 1;
 }
 body .section {
   background: #f2f2fc;
@@ -39,6 +60,7 @@ body .section {
   z-index: 0;
   overflow-y: auto;
   overflow-x: hidden;
+  transition: all 0.3s ease;
 }
 body .section .container {
   padding-top: 60px;
@@ -130,6 +152,7 @@ body .section-title h2::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .aside .logo {
   position: absolute;
@@ -168,6 +191,17 @@ body .section-title h2::after {
   top: 0;
   right: 0;
 }
+.aside .nav-toggler.open span {
+  background-color: transparent;
+}
+.aside .nav-toggler.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.aside .nav-toggler.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
 .aside .nav-toggler {
   height: 40px;
   width: 45px;
@@ -181,6 +215,7 @@ body .section-title h2::after {
   display: none;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 .aside .nav-toggler span {
   position: relative;
@@ -638,8 +673,21 @@ body .section-title h2::after {
 
 /*========================================= Responsive =========================================*/
 @media (max-width: 1199px) {
+  .aside.open {
+    left: 0;
+  }
   .aside {
     left: -270px;
+  }
+  .aside .nav-toggler {
+    display: flex;
+    left: 30px;
+  }
+  .aside .nav-toggler.open {
+    left: 300px;
+  }
+  .section.open {
+    left: 270px !important;
   }
   .section {
     left: 0 !important;
@@ -675,5 +723,12 @@ body .section-title h2::after {
 .about .about-content .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .section.open {
+    left: 0 !important;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
   }
 }/*# sourceMappingURL=style.css.map */

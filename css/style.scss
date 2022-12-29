@@ -32,6 +32,18 @@ body{
     .section.active{
         z-index: 2;
         opacity: 1;
+        animation: slideSection 300ms ease;
+    }
+    @keyframes slideSection {
+        0%{
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    .section.back-section{
+       z-index: 1; 
     }
     .section{
         background: $bgBlack9;
@@ -48,6 +60,7 @@ body{
         z-index: 0;
         overflow-y: auto;
         overflow-x: hidden;
+        transition: all 0.3s ease;
 
         .container{
             padding-top: 60px;
@@ -147,6 +160,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 
     .logo{
         position: absolute;
@@ -186,6 +200,17 @@ body{
         }
     }
 
+    .nav-toggler.open span{
+        background-color: transparent;
+        &::before{
+            transform: rotate(45deg);
+            top: 0;
+        }
+        &::after{
+            transform: rotate(-45deg);
+            top: 0;
+        }
+    }
     .nav-toggler{
         height: 40px;
         width: 45px;
@@ -200,6 +225,7 @@ body{
         display: none;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s ease;
 
         span{
             position: relative;
@@ -692,8 +718,21 @@ body{
 
 /*========================================= Responsive =========================================*/
 @media (max-width:1199px){
+    .aside.open{
+        left: 0;
+    }
     .aside{
         left: -270px;
+        .nav-toggler{
+            display: flex;
+            left: 30px;
+        }
+        .nav-toggler.open{
+            left: 300px;
+        }
+    }
+    .section.open{
+        left: 270px !important;
     }
     .section{
         left: 0 !important;
@@ -731,5 +770,12 @@ body{
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+@media (max-width:500px){
+    .section.open{
+        left: 0 !important;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
     }
 }
