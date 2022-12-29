@@ -1,4 +1,4 @@
-/* Typing Animation */
+/* ====================================== Typing Animation ====================================== */
 var typed = new Typed(".typing", {
     strings:["","Web Developer", "Web Designer", "Python Developer", "Logo Designer"],
     typeSpeed:100,
@@ -6,7 +6,7 @@ var typed = new Typed(".typing", {
     loop:true
 })
 
-/* Aside */
+/* ====================================== Aside ====================================== */
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
     totalNavList = navList.length;
@@ -73,3 +73,18 @@ const nav = document.querySelector(".nav"),
                 allSection[i].classList.toggle("open");
             }
         }
+
+/* ====================================== Light/Dark Mode ====================================== */
+const dayNight = document.querySelector(".day-night");
+dayNight.addEventListener('click', () => {
+    dayNight.querySelector("i").classList.toggle("fa-sun");
+    dayNight.querySelector("i").classList.toggle("fa-moon");
+    document.body.classList.toggle("dark");
+})
+window.addEventListener("load", () =>{
+    if(document.body.classList.contains("dark")){
+        dayNight.querySelector("i").classList.add("fa-sun");
+    } else{
+        dayNight.querySelector("i").classList.add("fa-moon");
+    }
+})

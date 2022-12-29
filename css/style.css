@@ -47,7 +47,7 @@ body .section.back-section {
   z-index: 1;
 }
 body .section {
-  background: #f2f2fc;
+  background: #151515;
   min-height: 100vh;
   display: block;
   padding: 0 30px;
@@ -91,7 +91,7 @@ body .btn {
   display: inline-block;
   border: none;
   white-space: nowrap;
-  background: #ec1839;
+  background: #F14AD0;
   transition: all 0.3s ease-in-out;
 }
 body .btn:hover {
@@ -114,7 +114,7 @@ body .section-title {
 }
 body .section-title h2 {
   font-size: 40px;
-  color: #302e4d;
+  color: #ffffff;
   font-weight: 700;
   position: relative;
 }
@@ -122,7 +122,7 @@ body .section-title h2::before {
   content: "";
   height: 4px;
   width: 50px;
-  background-color: #ec1839;
+  background-color: #F14AD0;
   position: absolute;
   top: 100%;
   left: 0;
@@ -131,7 +131,7 @@ body .section-title h2::after {
   content: "";
   height: 4px;
   width: 25px;
-  background-color: #ec1839;
+  background-color: #F14AD0;
   position: absolute;
   top: 100%;
   left: 0;
@@ -141,11 +141,11 @@ body .section-title h2::after {
 /*========================================= NavBar =========================================*/
 .aside {
   width: 270px;
-  background: #fdf9ff;
+  background: #222222;
   position: fixed;
   left: 0;
   top: 0;
-  border-right: 1px solid #e8dfec;
+  border-right: 1px solid #393939;
   padding: 30px;
   height: 100%;
   z-index: 10;
@@ -161,7 +161,7 @@ body .section-title h2::after {
   text-transform: capitalize;
 }
 .aside .logo a {
-  color: #302e4d;
+  color: #ffffff;
   font-weight: 500;
   padding: 15px 20px;
   font-size: 30px;
@@ -176,8 +176,8 @@ body .section-title h2::after {
   position: absolute;
   width: 20px;
   height: 20px;
-  border-bottom: 5px solid #ec1839;
-  border-left: 5px solid #ec1839;
+  border-bottom: 5px solid #F14AD0;
+  border-left: 5px solid #F14AD0;
   bottom: 0;
   left: 0;
 }
@@ -186,8 +186,8 @@ body .section-title h2::after {
   position: absolute;
   width: 20px;
   height: 20px;
-  border-top: 5px solid #ec1839;
-  border-right: 5px solid #ec1839;
+  border-top: 5px solid #F14AD0;
+  border-right: 5px solid #F14AD0;
   top: 0;
   right: 0;
 }
@@ -205,13 +205,13 @@ body .section-title h2::after {
 .aside .nav-toggler {
   height: 40px;
   width: 45px;
-  border: 1px solid #e8dfec;
+  border: 1px solid #393939;
   cursor: pointer;
   position: fixed;
   left: 300px;
   top: 20px;
   border-radius: 5px;
-  background: #fdf9ff;
+  background: #222222;
   display: none;
   align-items: center;
   justify-content: center;
@@ -221,14 +221,14 @@ body .section-title h2::after {
   position: relative;
   height: 2px;
   width: 18px;
-  background: #ec1839;
+  background: #F14AD0;
   display: inline-block;
 }
 .aside .nav-toggler span::before {
   content: "";
   height: 2px;
   width: 18px;
-  background: #ec1839;
+  background: #F14AD0;
   position: absolute;
   top: -6px;
   left: 0;
@@ -237,7 +237,7 @@ body .section-title h2::after {
   content: "";
   height: 2px;
   width: 18px;
-  background: #ec1839;
+  background: #F14AD0;
   position: absolute;
   top: 6px;
   left: 0;
@@ -253,22 +253,22 @@ body .section-title h2::after {
   font-size: 16px;
   font-weight: 600;
   display: block;
-  border-bottom: 1px solid #e8dfec;
-  color: #302e4d;
+  border-bottom: 1px solid #393939;
+  color: #ffffff;
   padding: 5px 15px;
 }
 .aside .nav li a i {
   margin-right: 15px;
 }
 .aside .nav li a.active {
-  color: #ec1839;
+  color: #F14AD0;
 }
 
 /* ========================================= Home Section =========================================*/
 .home {
   min-height: 100vh;
   display: flex;
-  color: #302e4d;
+  color: #ffffff;
 }
 .home .home-info {
   flex: 0 0 60%;
@@ -282,19 +282,19 @@ body .section-title h2::after {
   font-family: "Clicker Script", cursive;
   font-size: 30px;
   font-weight: 700;
-  color: #ec1839;
+  color: #F14AD0;
 }
 .home .home-info h3.my-profession {
   font-size: 30px;
   margin: 15px 0;
 }
 .home .home-info .typing {
-  color: #ec1839;
+  color: #F14AD0;
 }
 .home .home-info p {
   margin-bottom: 70px;
   font-size: 20px;
-  color: #504e70;
+  color: #e9e9e9;
 }
 .home .home-image {
   flex: 0 0 40%;
@@ -312,8 +312,8 @@ body .section-title h2::after {
   position: absolute;
   height: 80px;
   width: 80px;
-  border-bottom: 10px solid #ec1839;
-  border-right: 10px solid #ec1839;
+  border-bottom: 10px solid #F14AD0;
+  border-right: 10px solid #F14AD0;
   right: 20px;
   bottom: -40px;
 }
@@ -322,8 +322,8 @@ body .section-title h2::after {
   position: absolute;
   height: 80px;
   width: 80px;
-  border-top: 10px solid #ec1839;
-  border-left: 10px solid #ec1839;
+  border-top: 10px solid #F14AD0;
+  border-left: 10px solid #F14AD0;
   left: -20px;
   top: -40px;
 }
@@ -341,15 +341,15 @@ body .section-title h2::after {
   font-size: 24px;
   margin-bottom: 15px;
   font-weight: 700;
-  color: #302e4d;
+  color: #ffffff;
 }
 .about .about-content .about-text h3 span {
-  color: #ec1839;
+  color: #F14AD0;
 }
 .about .about-content .about-text p {
   font-size: 16px;
   line-height: 25px;
-  color: #504e70;
+  color: #e9e9e9;
 }
 .about .about-content .personal-info {
   flex: 0 0 60%;
@@ -364,12 +364,12 @@ body .section-title h2::after {
   font-weight: 600;
   padding: 10px 0;
   font-size: 14px;
-  color: #302e4d;
-  border-bottom: 1px solid #e8dfec;
+  color: #ffffff;
+  border-bottom: 1px solid #393939;
 }
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
-  color: #504e70;
+  color: #e9e9e9;
   margin-left: 4px;
   display: inline-block;
 }
@@ -394,11 +394,11 @@ body .section-title h2::after {
   line-height: 40px;
   font-weight: 600;
   font-size: 16px;
-  color: #302e4d;
+  color: #ffffff;
   text-transform: capitalize;
 }
 .about .about-content .skills .skill-item .progress {
-  background-color: #e8dfec;
+  background-color: #393939;
   height: 7px;
   border-radius: 4px;
   width: 100%;
@@ -410,12 +410,12 @@ body .section-title h2::after {
   top: 0;
   height: 100%;
   border-radius: 4px;
-  background-color: #ec1839;
+  background-color: #F14AD0;
 }
 .about .about-content .skills .skill-item .progress .skill-percent {
   position: absolute;
   right: 0;
-  color: #302e4d;
+  color: #ffffff;
   top: -40px;
   font-weight: 400;
   line-height: 40px;
@@ -430,16 +430,16 @@ body .section-title h2::after {
   font-size: 22px;
   margin-bottom: 30px;
   font-weight: 700;
-  color: #302e4d;
+  color: #ffffff;
 }
 .about .about-content .timeline-box {
   flex: 0 0 100%;
   max-width: 100%;
 }
 .about .about-content .timeline-box .timeline {
-  background-color: #fdf9ff;
+  background-color: #222222;
   padding: 30px 15px;
-  border: 1px solid #e8dfec;
+  border: 1px solid #393939;
   border-radius: 10px;
   width: 100%;
   position: relative;
@@ -459,7 +459,7 @@ body .section-title h2::after {
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: #ec1839;
+  background-color: #F14AD0;
 }
 .about .about-content .timeline-box .timeline .timeline-item .circle-dot {
   position: absolute;
@@ -468,13 +468,13 @@ body .section-title h2::after {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: #ec1839;
+  background-color: #F14AD0;
 }
 .about .about-content .timeline-box .timeline .timeline-item .timeline-date {
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 12px;
-  color: #504e70;
+  color: #e9e9e9;
 }
 .about .about-content .timeline-box .timeline .timeline-item .timeline-date .fa {
   margin-right: 5px;
@@ -484,13 +484,13 @@ body .section-title h2::after {
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
-  color: #302e4d;
+  color: #ffffff;
 }
 .about .about-content .timeline-box .timeline .timeline-item .timeline-text {
   line-height: 25px;
   font-size: 16px;
   text-align: justify;
-  color: #504e70;
+  color: #e9e9e9;
 }
 
 /* ========================================= Services Section =========================================*/
@@ -503,8 +503,8 @@ body .section-title h2::after {
   max-width: 33.33%;
 }
 .service .service-item .service-item-inner {
-  background-color: #fdf9ff;
-  border: 1px solid #e8dfec;
+  background-color: #222222;
+  border: 1px solid #393939;
   border-radius: 10px;
   padding: 30px 15px;
   text-align: center;
@@ -514,7 +514,7 @@ body .section-title h2::after {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 .service .service-item .service-item-inner:hover .icon {
-  background-color: #ec1839;
+  background-color: #F14AD0;
 }
 .service .service-item .service-item-inner:hover .icon .fa {
   font-size: 25px;
@@ -532,19 +532,19 @@ body .section-title h2::after {
 .service .service-item .service-item-inner .icon .fa {
   font-size: 40px;
   line-height: 60px;
-  color: #ec1839;
+  color: #F14AD0;
   transition: all 0.3s ease-in-out;
 }
 .service .service-item .service-item-inner h4 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #302e4d;
+  color: #ffffff;
   font-weight: 700;
   text-transform: capitalize;
 }
 .service .service-item .service-item-inner p {
   font-size: 16px;
-  color: #504e70;
+  color: #e9e9e9;
   line-height: 25px;
 }
 
@@ -558,7 +558,7 @@ body .section-title h2::after {
   margin-bottom: 40px;
 }
 .portfolio .portfolio-heading h2 {
-  color: #302e4d;
+  color: #ffffff;
   font-weight: 400;
   font-size: 22px;
 }
@@ -572,7 +572,7 @@ body .section-title h2::after {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 .portfolio .portfolio-item .portfolio-item-inner {
-  border: 6px solid #fdf9ff;
+  border: 6px solid #222222;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -584,13 +584,13 @@ body .section-title h2::after {
 
 /*========================================= Contact Section =========================================*/
 .contact .contact-title {
-  color: #ec1839;
+  color: #F14AD0;
   text-align: center;
   font-size: 25px;
   margin-bottom: 20px;
 }
 .contact .contact-sub-title {
-  color: #302e4d;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   font-size: 15px;
@@ -607,19 +607,19 @@ body .section-title h2::after {
 }
 .contact .contact-info-item .icon i {
   font-size: 25px;
-  color: #ec1839;
+  color: #F14AD0;
 }
 .contact .contact-info-item h4 {
   font-size: 18px;
   font-weight: 700;
-  color: #302e4d;
+  color: #ffffff;
   text-transform: capitalize;
   margin: 15px 0 5px;
 }
 .contact .contact-info-item p, .contact .contact-info-item a {
   font-size: 16px;
   line-height: 25px;
-  color: #504e70;
+  color: #e9e9e9;
   font-weight: 400;
 }
 .contact .contact-info-item a {
@@ -629,7 +629,7 @@ body .section-title h2::after {
   content: "";
   height: 1px;
   width: 90%;
-  background-color: #504e70;
+  background-color: #e9e9e9;
   position: absolute;
   top: 100%;
   left: 5%;
@@ -653,11 +653,11 @@ body .section-title h2::after {
   width: 100%;
   height: 50px;
   border-radius: 15px;
-  background: #fdf9ff;
-  border: 1px solid #e8dfec;
+  background: #222222;
+  border: 1px solid #393939;
   padding: 10px 25px;
   font-size: 16px;
-  color: #504e70;
+  color: #e9e9e9;
   transition: all 0.3s ease-in-out;
 }
 .contact .contact-form .form-item .form-control:focus {
